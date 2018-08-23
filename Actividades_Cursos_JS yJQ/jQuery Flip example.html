@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!-- saved from url=(0058)https://www.ostraining.com/images/coding/jquery-flip/demo/ -->
+<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta name="robots" content="noindex, nofollow">
+	<title>jQuery Flip example</title>
+	<script src="./jQuery Flip example_files/jquery-2.1.4.min.js.descarga"></script>
+	<script src="./jQuery Flip example_files/jquery.flip.min.js.descarga"></script>
+	<script>
+    $(function(){
+    	$(".flip-horizontal").flip({
+  			trigger: 'hover'
+		});
+		$(".flip-vertical").flip({
+			axis: 'x',
+  			trigger: 'hover'
+		});
+    });
+  	</script>
+	<link href="./jQuery Flip example_files/css" rel="stylesheet" type="text/css">
+    <link href="./jQuery Flip example_files/style.css" rel="stylesheet" media="all">
+</head>
+<body>
+
+	<h2>Horizontal Flip</h2>
+	
+	<div id="flip-this" class="flip-horizontal" style="perspective: 600px; position: relative; transform-style: preserve-3d;"> 
+  		<div class="front" style="height: 100%; width: 100%; backface-visibility: hidden; transform-style: preserve-3d; position: absolute; z-index: 1; transition: all 0.5s ease-out 0s; transform: rotateY(0deg);"> 
+    		<img src="./jQuery Flip example_files/image.jpg" alt="" style="backface-visibility: hidden;">
+  		</div> 
+  		<div class="back" style="transform: rotateY(-180deg); height: 100%; width: 100%; backface-visibility: hidden; transform-style: preserve-3d; position: absolute; z-index: 0; transition: all 0.5s ease-out 0s;">
+    		<h3 style="backface-visibility: hidden;">Some Text in the Back!</h3>
+  		</div> 
+	</div>
+	
+	<h2>Vertical Flip</h2>
+	
+	<div id="flip-this" class="flip-vertical" style="perspective: 398px; position: relative; transform-style: preserve-3d;"> 
+  		<div class="front" style="height: 100%; width: 100%; backface-visibility: hidden; transform-style: preserve-3d; position: absolute; z-index: 1; transition: all 0.5s ease-out 0s; transform: rotateX(0deg);"> 
+    		<img src="./jQuery Flip example_files/image.jpg" alt="" style="backface-visibility: hidden;">
+  		</div> 
+  		<div class="back" style="transform: rotateX(-180deg); height: 100%; width: 100%; backface-visibility: hidden; transform-style: preserve-3d; position: absolute; z-index: 0; transition: all 0.5s ease-out 0s;">
+    		<h3 style="backface-visibility: hidden;">Some Text in the Back!</h3>
+  		</div> 
+	</div>
+
+
+</body></html>

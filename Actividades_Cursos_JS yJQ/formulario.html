@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script languaje="javascript">
+        function check(browser)
+        {
+        document.formu.respuesta.value = browser;
+        }
+    </script>
+       
+</head>
+<body>
+    <h2> Formulario </h2>
+    <form name="formu" id="formu" action="">
+        1.- ¿¿ De que color son las mangas del chaleco negro...?? :<br>
+        <input type="radio" name="browser" onclick="check(this.value)"
+        value="Incorrecto !!"> Negro <br>
+        <input type="radio" name="browser" onclick="check(this.value)"
+        value="Incorrecto !!"> Rojo <br>
+        <input type="radio" name="opera" onclick="check(this.value)"
+        value="Correcto !!"> No tiene mangas <br>
+        <br>
+
+        2.- ¿¿ Tengo tres manzanas. Si me quitas dos, ¿cuántas tienes...?? :<br>
+        <input type="radio" name="browser" onclick="check(this.value)"
+        value="Incorrecto !!"> Una <br>
+        <input type="radio" name="browser" onclick="check(this.value)"
+        value="Correcto !!"> Dos <br>
+        <input type="radio" name="opera" onclick="check(this.value)"
+        value="Incorrecto !!"> Ni una <br>
+        <br>
+        
+        3.- ¿¿ De que color es el caballo Blanco de Napoleon...?? :<br>
+        <input type="radio" name="browser" onclick="check(this.value)"
+        value="Correcto !!"> Blanco <br>
+        <input type="radio" name="browser" onclick="check(this.value)"
+        value="Incorrecto !!"> Negro <br>
+        <input type="radio" name="opera" onclick="check(this.value)"
+        value="Incorrecto !!"> Colorado <br>
+        <br>
+
+        4.- ¿¿ Qué pasó ayer en París de 6pm a 7pm...?? :<br>
+        <input type="radio" name="browser" onclick="check(this.value)"
+        value="Incorrecto !!"> Nada <br>
+        <input type="radio" name="browser" onclick="check(this.value)"
+        value="Correcto !!"> Una hora <br>
+        <input type="radio" name="opera" onclick="check(this.value)"
+        value="Incorrecto !!"> Un tiroteo <br>
+        <br>
+
+        5.- ¿¿ Que es lo primero que hace Juanito por las mañanas...?? :<br>
+        <input type="radio" name="browser" onclick="check(this.value)"
+        value="Correcto !!"> Despertarse <br>
+        <input type="radio" name="browser" onclick="check(this.value)"
+        value="Incorrecto !!"> Desayunar <br>
+        <input type="radio" name="opera" onclick="check(this.value)"
+        value="Incorrecto !!"> Lavarse los dientes <br>
+        <br>
+
+        6.- La palabra Paris comienza con "p" y ¿¿ termina con...?? :<br>
+        <input type="radio" name="browser" onclick="check(this.value)"
+        value="Incorrecto !!"> "S" <br>
+        <input type="radio" name="browser" onclick="check(this.value)"
+        value="Incorrecto !!"> "No se" <br>
+        <input type="radio" name="opera" onclick="check(this.value)"
+        value="Correcto !!"> "T" <br>
+        <br>
+
+        <br>
+        <input type="text" name="respuesta" size="20">
+    </form>
+</body>
+</html>

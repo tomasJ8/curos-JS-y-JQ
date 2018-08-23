@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>inicio</title>
+   
+</head>
+<body>
+   <script type="text/javascript">
+
+     let ldo1 = parseInt (prompt("lado 1 del triangulo"));
+     let ldo2 = parseInt (prompt("lado 2 del triangulo")); 
+     let ldo3 = parseInt (prompt("lado 3 del triangulo"));
+   
+     var area;
+     let perimetro;
+
+  
+
+     if(ldo1 == ldo2 && ldo2 == ldo3){
+        alert("este triangulo es equilatero");
+     }
+     else if(ldo1 == ldo2 || ldo2 == ldo3 || ldo3 == ldo1 )
+     {
+         alert("este triangulo es isoceles");
+     }
+     else(ldo1 != ldo2 || ldo1 != ldo2 || ldo3 != ldo2)
+     {
+         alert("este triangulo es escaleno")
+     }     
+     area = ldo1 * ldo2 / 2;
+     perimetro = (ldo1) + (ldo2) + (ldo3) ;
+     alert("el area:" + + area + "\n perimetro:" + perimetro );
+    
+     
+
+   </script> 
+   
+</body>
+</html>

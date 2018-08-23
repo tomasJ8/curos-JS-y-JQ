@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!-- saved from url=(0058)https://www.ostraining.com/images/coding/jquery-flip/demo/ -->
+<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta name="robots" content="noindex, nofollow">
+	<title> Flip </title>
+	<script src="./jQuery Flip example_files/jquery-2.1.4.min.js.descarga"></script>
+	<script src="./jQuery Flip example_files/jquery.flip.min.js.descarga"></script>
+	<script>
+    $(function(){
+    	$(".flip-horizontal").flip({
+  			trigger: 'hover'
+		});
+		$(".flip-vertical").flip({
+			axis: 'x',
+  			trigger: 'hover'
+		});
+    });
+  	</script>
+  	<script>
+  		$(function() { 
+  var botonMostrar = $("#boton-mostrar"),
+      botonOcultar = $("#boton-ocultar"),
+      parrafo = $("#parrafo");
+  
+  botonMostrar.on("click", function() {
+    parrafo.show();
+  });
+  botonOcultar.on("click", function() {
+    parrafo.hide();
+  }); 
+});
+  	</script>
+  		<script>
+  		$(function() { 
+  var botonMostrar1 = $("#boton-mostrar1"),
+      botonOcultar1 = $("#boton-ocultar1"),
+      parrafo = $("#parrafo1");
+  
+  botonMostrar1.on("click", function() {
+    parrafo.show();
+  });
+  botonOcultar1.on("click", function() {
+    parrafo.hide();
+  }); 
+});
+  	</script>
+  	
+
+	<link href="./jQuery Flip example_files/css" rel="stylesheet" type="text/css">
+    <link href="./jQuery Flip example_files/style.css" rel="stylesheet" media="all">
+</head>
+<body>
+	<h1><b> ...Imagenes Con Estilo :)... </b></h1>
+
+	<h2> Dead Pool </h2>
+	
+	<div id="flip-this" class="flip-horizontal" style="perspective: 600px; position: relative; transform-style: preserve-3d;"> 
+  		<div class="front" style="height: 500px; width: 100%; backface-visibility: hidden; transform-style: preserve-3d; position: absolute; z-index: 1; transition: all 0.5s ease-out 0s; transform: rotateY(0deg);"> 
+    		<img src="imagenes/ded1.jpg" alt="" style="backface-visibility: hidden;" class="v">
+  		</div> 
+  		<div  id="boton" class="back" style="transform: rotateY(-180deg); height: 100%; width: 100%; backface-visibility: hidden; transform-style: preserve-3d; position: absolute; z-index: 0; transition: all 0.5s ease-out 0s;">
+    		<h3 style="backface-visibility: hidden;">  </h3><p style="display: none;" id="parrafo1">Solo soy un tipo malo que cobra por golpear a otros más malos.</p><button style="color: red; background: black;" id="boton-mostrar1"> Has click </button>
+    		
+    		
+  		</div> 
+	</div>
+
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	
+	<h2> Quien Soy...?? </h2>
+	
+	<div id="flip-this" class="flip-vertical" style="perspective: 398px; position: relative; transform-style: preserve-3d;"> 
+  		<div class="front" style="height: 500px; width: 200%; backface-visibility: hidden; transform-style: preserve-3d; position: absolute; z-index: 1; transition: all 0.5s ease-out 0s; transform: rotateX(0deg);"> 
+    		<img  src="imagenes/ded2.jpg" alt="" style="backface-visibility: hidden; " class="v">
+  		</div> 
+  		<div class="back" style="transform: rotateX(-180deg); height: 600px; width: 100%; backface-visibility: hidden; transform-style: preserve-3d; position: absolute; z-index: 0; transition: all 0.5s ease-out 0s;">
+    		<h3 style="backface-visibility: hidden;"><div id="flip"><b> I'm Dead Pool...!! </b></div></h3> 
+    		<p style="display: none;" id="parrafo">Quizá se pregunten por qué el traje rojo. Es para que los malos no me vean sangrar ;).</p><button style="color: red; background: black;"  id="boton-mostrar">Click aqui</button>
+    		
+    		
+	
+    		
+      
+    	</div> 
+
+	</div>
+
+	
+
+</body>
+</html>

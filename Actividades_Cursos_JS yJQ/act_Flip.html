@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
+
+<script> 
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideDown("slow");
+    });
+});
+</script>
+
+<script> 
+$(document).ready(function(){
+    $("button").click(function(){
+        var div = $("div");  
+        div.animate({left: '100px'}, "slow");
+        div.animate({fontSize: '3em'}, "slow");
+    });
+});
+</script> 
+
+<style> 
+    #panel, #flip {
+        padding: 5px;
+        text-align: center;
+        background-color: yellowgreen;
+        border: solid 1px black;
+    }
+    
+    #panel {
+        padding: 50px;
+        display: none;
+    }
+    </style>
+
+</head>
+<body>
+
+    <div id="flip">Cursos de javascript y JQuery...!!</div>
+    <div id="panel">Hello world!
+        <button>Start Animation</button>
+      
+
+</body>
+</html>
